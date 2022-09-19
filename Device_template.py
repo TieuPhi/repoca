@@ -144,7 +144,7 @@ class Device():
 
     def generate_route(self,routes):
         for route in routes:
-            print("ip route <{}>/<{}> <{}>".format(list(route.values())[0],list(route.values())[1],self.gateway))
+            print("ip route {}/{} {}".format(list(route.values())[0],list(route.values())[1],self.gateway))
 
 def main():
     # Parse arguments
